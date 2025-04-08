@@ -1,79 +1,37 @@
-# Data Project Template
+#Data Notes
 
-<a target="_blank" href="https://datalumina.com/">
-    <img src="https://img.shields.io/badge/Datalumina-Project%20Template-2856f7" alt="Datalumina Project" />
-</a>
+<h2>Building a data pipeline</h2>
+<ul>
+    <li>setting up a pipeline creates a clean and modular flow. Where one object contains the full workflow.</li>
+    <li>Yor fit and transform steps are done automatically in the right order.</li>
+    <li>Easy to swap models or steps.</li>
+</ul>
 
-## Cookiecutter Data Science
-This project template is a simplified version of the [Cookiecutter Data Science](https://cookiecutter-data-science.drivendata.org) template, created to suit the needs of Datalumina and made available as a GitHub template.
+<h2>Notes from Working</h2>
+<ul>
+    <li>Cleaning categorical variables all the same way ColumnTransformer </li>
+        <li>ColumnTransformer applies different transformations to different columns. In this case one hot encoding for the categorical variables and passthrough for the others </li>
+    <li>Mean Squared Error tells us how close the model is. A MSE closer to zero is great</li>
+    <li>Root Mean Squared Error on average how much we are off by</li>
+</ul>
 
-## Adjusting .gitignore
+<h2>Helpful Libraries</h2>
+<ul>
+    <li>Pandas</li>
+    <li>Shap</li>
+    <li>Scikit-learn</li>
+</ul>
 
-Ensure you adjust the `.gitignore` file according to your project needs. For example, since this is a template, the `/data/` folder is commented out and data will not be exlucded from source control:
+<h2>Things I Learned</h2>
+<ul>
+    <li>Shap helped me visualize how much each item impacted the regression tree decision</li>
+    <li>The decision tree performed better than the general linear regression model according to the rsquare .8 vs .7</li>
+</ul>
 
-```plaintext
-# exclude data from source control by default
-# /data/
-```
-
-Typically, you want to exclude this folder if it contains either sensitive data that you do not want to add to version control or large files.
-
-## Duplicating the .env File
-To set up your environment variables, you need to duplicate the `.env.example` file and rename it to `.env`. You can do this manually or using the following terminal command:
-
-```bash
-cp .env.example .env # Linux, macOS, Git Bash, WSL
-copy .env.example .env # Windows Command Prompt
-```
-
-This command creates a copy of `.env.example` and names it `.env`, allowing you to configure your environment variables specific to your setup.
-
-
-## Project Organization
-
-```
-├── LICENSE            <- Open-source license if one is chosen
-├── README.md          <- The top-level README for developers using this project
-├── data
-│   ├── external       <- Data from third party sources
-│   ├── interim        <- Intermediate data that has been transformed
-│   ├── processed      <- The final, canonical data sets for modeling
-│   └── raw            <- The original, immutable data dump
-│
-├── models             <- Trained and serialized models, model predictions, or model summaries
-│
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`
-│
-├── references         <- Data dictionaries, manuals, and all other explanatory materials
-│
-├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-│   └── figures        <- Generated graphics and figures to be used in reporting
-│
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze > requirements.txt`
-│
-└── src                         <- Source code for this project
-    │
-    ├── __init__.py             <- Makes src a Python module
-    │
-    ├── config.py               <- Store useful variables and configuration
-    │
-    ├── dataset.py              <- Scripts to download or generate data
-    │
-    ├── features.py             <- Code to create features for modeling
-    │
-    │    
-    ├── modeling                
-    │   ├── __init__.py 
-    │   ├── predict.py          <- Code to run model inference with trained models          
-    │   └── train.py            <- Code to train models
-    │
-    ├── plots.py                <- Code to create visualizations 
-    │
-    └── services                <- Service classes to connect with external platforms, tools, or APIs
-        └── __init__.py 
-```
-
---------
+<h2>Things to do</h2>
+<ul>
+    - [] add examples of future inputs 
+    - [] see if other data points can be added to improve. 
+    - [] add a tree visualization
+    - [] create risk model with a risk score 
+</ul>
