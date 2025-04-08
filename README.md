@@ -1,4 +1,12 @@
 #Data Notes
+<h1> Goal: Predict the cost of medical insurance </h1>
+
+<h2>Things to do</h2>
+
+- [ ] add examples of future inputs 
+- [ ] see if other data points can be added to improve. 
+- [ ] add a tree visualization
+- [ ] create risk model with a risk score 
 
 <h2>Building a data pipeline</h2>
 <ul>
@@ -26,12 +34,4 @@
 <ul>
     <li>Shap helped me visualize how much each item impacted the regression tree decision</li>
     <li>The decision tree performed better than the general linear regression model according to the rsquare .8 vs .7</li>
-</ul>
-
-<h2>Things to do</h2>
-<ul>
-    - [] add examples of future inputs 
-    - [] see if other data points can be added to improve. 
-    - [] add a tree visualization
-    - [] create risk model with a risk score 
 </ul>
