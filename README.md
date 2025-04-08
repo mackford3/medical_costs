@@ -4,6 +4,7 @@
 <h2>Things to do</h2>
 
 - [ ] add examples of future inputs 
+- [ ] add p balue tests
 - [ ] see if other data points can be added to improve. 
 - [ ] add a tree visualization
 - [ ] create risk model with a risk score 
