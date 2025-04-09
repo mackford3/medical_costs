@@ -8,6 +8,8 @@
 - [ ] see if other data points can be added to improve. 
 - [ ] add a tree visualization
 - [ ] create risk model with a risk score 
+- [x] add pearsons coef
+- [x] add a sample with new data
 
 <h2>Building a data pipeline</h2>
 <ul>
